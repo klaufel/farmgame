@@ -1,9 +1,0 @@
-var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
-_parcelHelpers.defineInteropFlag(exports);
-var _styledComponents = require('styled-components');
-var _styledComponentsDefault = _parcelHelpers.interopDefault(_styledComponents);
-exports.default = {
-  Wrapper: _styledComponentsDefault.default.div`
-    background: red;
-  `
-};
