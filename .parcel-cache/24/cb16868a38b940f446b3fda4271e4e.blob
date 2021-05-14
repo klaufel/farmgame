@@ -1,0 +1,24 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _phaser = require('phaser');
+var _phaserDefault = _parcelHelpers.interopDefault(_phaser);
+class Scene extends _phaserDefault.default.Scene {
+  preload() {
+    this.load.image('logo', 'assets/logo.png');
+  }
+  create() {
+    const text = this.add.text(250, 250, 'Phaser', {
+      backgroundColor: 'white',
+      color: 'blue',
+      fontSize: 48
+    });
+    text.setInteractive({
+      useHandCursor: true
+    });
+    this.add.image(400, 300, 'logo');
+    text.on('pointerup', () => {
+      console.log('Hello!');
+    });
+  }
+}
+exports.default = Scene;

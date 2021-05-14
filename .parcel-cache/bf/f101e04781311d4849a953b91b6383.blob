@@ -1,0 +1,38 @@
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _styledComponents = require('styled-components');
+  var _styledComponentsDefault = _parcelHelpers.interopDefault(_styledComponents);
+  var _jsxFileName = "/Users/juancarlos.ruiz/src/klaufel/farmgame/src/components/scenario/index.js";
+  const Styles = {
+    Wrapper: _styledComponentsDefault.default.div`
+    background: red;
+  `
+  };
+  function Scenario() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(Styles.Wrapper, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 10
+        }
+      })
+    );
+  }
+  exports.default = Scenario;
+  _c = Scenario;
+  var _c;
+  $RefreshReg$(_c, "Scenario");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
